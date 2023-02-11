@@ -1,0 +1,129 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  background: #ffffff;
+  color: #212121;
+}
+
+.button-item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+}
+
+.button-item:hover,
+.button-item:focus {
+  background: #2196f3;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.contact-item {
+  font-size: 14px;
+  line-height: 1.42;
+  color: #757575;
+  text-decoration: none;
+}
+
+.navigate-item:hover,
+.navigate-item:focus,
+.contact-item:hover,
+.contact-item:focus {
+  color: #2196f3;
+}
+
+.navigate-item,
+.navigate-item:active {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.42;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: #212121;
+}
+
+.portofolio-list,
+.our-team-image,
+.what-we-do-list,
+.our-service-list,
+.button-section,
+.contact-section,
+.navigate-section {
+  list-style: none;
+}
+
+.address-section {
+  line-height: 1.42;
+  color: #FFFFFF;
+  font-style: normal;   
+}
+
+.footer-section,
+.first-section {
+  background: #2F303A;
+}
+
+.main-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 25%;
+}
+
+ .our-service {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.42;
+ }
+
+.about-us {
+  line-height: 1.71;
+  color: #757575;
+}
+
+.what-we-do-section,
+.our-team-section {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+.our-team-member {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+
+.our-team-specialist {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  color: #757575;
+}
+
+.project-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.project-type{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  color: #757575;
+}
