@@ -1,24 +1,38 @@
-body {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  letter-spacing: 0.03em;
-  background: #ffffff;
-  color: #212121;
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --blue: #2196f3;
+  --medium-grey: #757575;
+  --dark-grey: #2F303A;
+  --font-family: "Roboto", sans-serif;
+  --font-weight: 400;
+  --font-size: 14px;
+  --letter-spacing: 0.03em;
 }
+
+body {
+  font-family: var(--font-family);
+  font-weight: var(--font-weight);
+  font-size: var(--font-size);
+  letter-spacing: var(--letter-spacing);
+  background: var(--white);
+  color: var(--black);
+  font-style: normal;
+}
+
+
 
 .logo {
   font-family: 'Raleway';
-  color: #212121;
+  color: var(--black);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
   text-decoration: none;
 }
 
 .logo-color {
-  color: #2196f3;
+  color: var(--blue);
 }
 
 .button-item {
@@ -34,37 +48,44 @@ body {
 
 .button-item:hover,
 .button-item:focus {
-  background: #2196f3;
-  color: #ffffff;
+  background: var(--blue);
+  color: var(--white);
   cursor: pointer;
   box-shadow: 
     0px 3px 1px rgba(0, 0, 0, 0.1),
     0px 1px 2px rgba(0, 0, 0, 0.08), 
-    0px 2px 2px rgba(0, 0, 0, 0.12)
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .contact-item {
-  font-size: 14px;
+  font-weight: 500;
   line-height: 1.42;
-  color: #757575;
+  letter-spacing: 0.02em;
+  color: var(--medium-grey);
   text-decoration: none;
 }
 
+.contact-item-footer {
+  line-height: 1.14;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.contact-item-footer:hover,
 .navigate-item:hover,
 .navigate-item:focus,
 .contact-item:hover,
 .contact-item:focus {
-  color: #2196f3;
+  color: var(--blue);
 }
 
 .navigate-item,
 .navigate-item:active {
-  font-size: 14px;
   font-weight: 500;
   line-height: 1.42;
   letter-spacing: 0.02em;
   text-decoration: none;
-  color: #212121;
+  color: var(--black);
 }
 
 .portofolio-list,
@@ -79,13 +100,13 @@ body {
 
 .address-section {
   line-height: 1.42;
-  color: #FFFFFF;
+  color: var(--white);
   font-style: normal;   
 }
 
 .footer-section,
 .first-section {
-  background: #2F303A;
+  background: var(--dark-grey);
 }
 
 .main-title {
@@ -93,20 +114,19 @@ body {
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
-  color: #FFFFFF;
+  color: var(--white);
   text-align: center;
   padding: 25%;
 }
 
  .our-service {
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.42;
  }
 
 .about-us {
   line-height: 1.71;
-  color: #757575;
+  color: var(--medium-grey);
 }
 
 .what-we-do-section,
@@ -117,6 +137,10 @@ body {
   text-align: center;
 }
 
+.last-section {
+  background: #F5F4FA;
+}
+
 .our-team-member {
   font-weight: 500;
   font-size: 16px;
@@ -125,11 +149,11 @@ body {
 }
 
 .our-team-specialist {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
+  font-weight: inherit;
   text-align: center;
-  color: #757575;
+  color: var(--medium-grey);
 }
 
 .project-title {
@@ -140,8 +164,7 @@ body {
 }
 
 .project-type{
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
-  color: #757575;
+  color: var(--medium-grey);
 }
